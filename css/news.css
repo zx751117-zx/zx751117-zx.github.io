@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Noto Sans JP',sans-serif;
+    background:#f5f7fc;
+    color:#222;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+.container{
+    width:1200px;
+    margin:auto;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    margin-top:84px;
+    height:340px;
+    background:
+    linear-gradient(to right, rgba(230,240,255,0.95), rgba(255,255,255,0.75)),
+    url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop') center/cover;
+}
+
+.hero-inner{
+    height:100%;
+    display:flex;
+    align-items:center;
+}
+
+.hero-text h1{
+    font-size:68px;
+    margin-bottom:20px;
+    font-weight:900;
+}
+
+.hero-text h1 span{
+    color:#1f6cff;
+}
+
+.hero-text p{
+    font-size:26px;
+    color:#333;
+    letter-spacing:1px;
+}
+
+/* ================= NEWS ================= */
+
+.news-section{
+    padding:70px 0 100px;
+}
+
+.news-tabs{
+    display:flex;
+    gap:22px;
+    margin-bottom:45px;
+}
+
+.news-tabs a{
+    padding:12px 28px;
+    border-radius:26px;
+    background:#fff;
+    color:#666;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.news-tabs a.active{
+    background:#1f6cff;
+    color:#fff;
+}
+
+.news-list{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+}
+
+.news-item{
+    display:grid;
+    grid-template-columns:220px 1fr;
+    gap:35px;
+    align-items:flex-start;
+}
+
+.news-image{
+    border-radius:6px;
+    overflow:hidden;
+    background:#e8edf5;
+    height:140px;
+}
+
+.news-image img{
+    height:100%;
+    object-fit:cover;
+}
+
+.news-content h3{
+    font-size:22px;
+    margin-bottom:14px;
+    font-weight:700;
+    line-height:1.5;
+}
+
+.news-content p{
+    color:#666;
+    line-height:2;
+    font-size:15px;
+    margin-bottom:14px;
+}
+
+.news-date{
+    color:#999;
+    font-size:14px;
+}
+
+.pagination{
+    margin-top:60px;
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    color:#666;
+}
+
+.pagination span{
+    cursor:pointer;
+}
+
+.pagination .current{
+    color:#1f6cff;
+    font-weight:700;
+}
+
+/* ================= FOOTER ================= */
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1200px){
+
+.container{
+    width:92%;
+}
+
+}
+
+@media(max-width:900px){
+
+nav{
+    display:none;
+}
+
+.hero{
+    height:260px;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+.hero-text p{
+    font-size:18px;
+}
+
+.news-item{
+    grid-template-columns:1fr;
+}
+
+.footer-bottom{
+    grid-template-columns:1fr;
+}
+
+}
