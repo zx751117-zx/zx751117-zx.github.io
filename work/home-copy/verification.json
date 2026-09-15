@@ -1,0 +1,29 @@
+{
+  "pages": 109,
+  "assets": 893,
+  "localReferencesChecked": 13448,
+  "issues": [],
+  "unusedGeneratedAssetsRemoved": 61,
+  "upstreamErrors": [
+    {
+      "kind": "asset",
+      "url": "https://33792003.s21i.faiusr.com/76/ABUIg8COEBBMGAAgkdyAyQYouIb4iwM.ttf",
+      "error": "Error: HTTP 404"
+    },
+    {
+      "kind": "asset",
+      "url": "https://33792003.s21i.faiusr.com/76/ABUIg8COEBBMGAAgkdyAyQYort3i4wM.ttf",
+      "error": "Error: HTTP 404"
+    },
+    {
+      "kind": "asset",
+      "url": "https://2.ss.508sys.com/css/dist/image/loading/loading_2b.gif?v=201807251417",
+      "error": "Error: HTTP 404"
+    },
+    {
+      "kind": "asset",
+      "url": "https://2.ss.508sys.com/css/comm/font/2.0.0/VideoJS.eot?",
+      "error": "Error: HTTP 404"
+    }
+  ]
+}

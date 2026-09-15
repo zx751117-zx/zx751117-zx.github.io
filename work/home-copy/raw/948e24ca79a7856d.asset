@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>豆瓣</title>
+    <style type="text/css">
+        body{font-family:Arial,Helvetica,sans-serif;font-size:14px;}
+    </style>
+</head>
+<body>
+    <div>
+        <div style="margin:20px auto;">
+            <div style="font-size:25px;color:#1b9336;border-bottom:5px solid #eef9eb">
+                <span style="font-size:20px;font-weight:bold">豆瓣</span> d<span style="color:#0092c8">o</span><span style="color:#ffad68">u</span><span>b</span><span style="color:#0092c8">a</span><span style="color:#ffad68">n</span>
+            </div>
+            <p>请点击下方按钮继续浏览或<a href="https://accounts.douban.com/passport/login?redir=https://www.douban.com/">登录</a>使用豆瓣</p>
+            <form name="sec" id="sec" method="POST" action="/c">
+              <input type="hidden" id="tok" name="tok" value="1789263598@60bb0347d1551571c8069d926523efbdc71ad023b38170621b49ded354b81eb47e349efe5b2f1245948be08003487ab457aa0561abd116cbeb4cec552cb948b1@aHR0cHM6Ly93d3cuZG91YmFuLmNvbS9hY2NvdW50cy9jb25uZWN0L3FxLz9mcm9tPU5vbmUmcmVkaXI9aHR0cHMlM0EvL3d3dy5kb3ViYW4uY29tL3NoYXJlL3NlcnZpY2UlM0ZuYW1lJTNEJTI1RTMlMjU4MCUyNTkwJTI1RTUlMjVCMSUyNTk1JTI1RTQlMjVCQyUyNTlBJTI1RTUlMjU5QiUyNTlFJTI1RTklMjVBMSUyNUJFJTI1N0MlMjVFNyUyNUFDJTI1QUMlMjVFNSUyNTlCJTI1OUIlMjVFNSUyNUIxJTI1OEElMjVFNCUyNUI4JTI1QUQlMjVFNSUyNTlCJTI1QkQlMjVFNyUyNTlGJTI1QjMlMjVFNiUyNUIyJTI1QjklMjVFNyUyNTlGJTI1QjMlMjVFNSUyNThDJTI1OTYlMjVFNSUyNUFFJTI1ODklMjVFNSUyNTg1JTI1QTglMjVFNyUyNTk0JTI1OUYlMjVFNCUyNUJBJTI1QTclMjVFNCUyNUI4JTI1OEUlMjVFNSUyNUJBJTI1OTQlMjVFNiUyNTgwJTI1QTUlMjVFNyUyNUFFJTI1QTElMjVFNyUyNTkwJTI1ODYlMjVFNiUyNThBJTI1ODAlMjVFNiUyNTlDJTI1QUYlMjVFNCUyNUJBJTI1QTQlMjVFNiUyNUI1JTI1ODElMjVFNSUyNUE0JTI1QTclMjVFNCUyNUJDJTI1OUElMkItJTJCJTI1RTUlMjU4QyUyNTk3JTI1RTQlMjVCQSUyNUFDJTI1RTclMjU5QiUyNTg4JTI1RTUlMjU4OCUyNTlCJTI1RTUlMjVBNCUyNUE5JTI1RTUlMjU5QyUyNUIwJTI1RTclMjVBNyUyNTkxJTI1RTYlMjU4QSUyNTgwJTI1RTYlMjU5QyUyNTg5JTI1RTklMjU5OSUyNTkwJTI1RTUlMjU4NSUyNUFDJTI1RTUlMjU4RiUyNUI4JTI1RTMlMjU4MCUyNTkxaHR0cHMlMjUzQSUyNTJGJTI1MkZ5aW5jaHVuZy5jb20lMjUyRnN5cy1uZCUyNTJGMTAuaHRtbCUyNnRleHQlM0RodHRwcyUyNTNBJTI1MkYlMjUyRnlpbmNodW5nLmNvbSUyNTJGc3lzLW5kJTI1MkYxMC5odG1sJTI2aW1hZ2UlM0RodHRwJTI1M0EvLzMzNzkyMDAzLnMyMWkuZmFpdXNyLmNvbS80L0FCVUlBQkFFR0FBZzg3eml4d1lvMnB2NmlnY3c3d1U0c0FRLnBuZw==@6213743d4ab5f03a93bd37a52affe10844b2a8477ba10a173aa4ac9bbb032c1e" />
+              <input type="hidden" id="cha" name="cha" value="5b54be9f2ce9731dd24cc6e7e08f38e30f83a5511a4fa63d1a088b7a2e354b9c1bca985311f9bad7f41fd393a6f384660ee1a5f535a2d68f95eaed218a43c66d" />
+              <input type="hidden" id="sol" name="sol" value="" />
+              <input type="hidden" id="red" name="red" value="https://www.douban.com/accounts/connect/qq/?from=None&redir=https%3A//www.douban.com/share/service%3Fname%3D%25E3%2580%2590%25E5%25B1%2595%25E4%25BC%259A%25E5%259B%259E%25E9%25A1%25BE%257C%25E7%25AC%25AC%25E5%259B%259B%25E5%25B1%258A%25E4%25B8%25AD%25E5%259B%25BD%25E7%259F%25B3%25E6%25B2%25B9%25E7%259F%25B3%25E5%258C%2596%25E5%25AE%2589%25E5%2585%25A8%25E7%2594%259F%25E4%25BA%25A7%25E4%25B8%258E%25E5%25BA%2594%25E6%2580%25A5%25E7%25AE%25A1%25E7%2590%2586%25E6%258A%2580%25E6%259C%25AF%25E4%25BA%25A4%25E6%25B5%2581%25E5%25A4%25A7%25E4%25BC%259A%2B-%2B%25E5%258C%2597%25E4%25BA%25AC%25E7%259B%2588%25E5%2588%259B%25E5%25A4%25A9%25E5%259C%25B0%25E7%25A7%2591%25E6%258A%2580%25E6%259C%2589%25E9%2599%2590%25E5%2585%25AC%25E5%258F%25B8%25E3%2580%2591https%253A%252F%252Fyinchung.com%252Fsys-nd%252F10.html%26text%3Dhttps%253A%252F%252Fyinchung.com%252Fsys-nd%252F10.html%26image%3Dhttp%253A//33792003.s21i.faiusr.com/4/ABUIABAEGAAg87zixwYo2pv6igcw7wU4sAQ.png">
+              <button type="submit" id="sub" name="btnsubmit">点我继续浏览</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+
+function sha512(string) {
+    return new Promise((resolve, reject) => {
+        let buffer = (new TextEncoder).encode(string);
+
+        crypto.subtle.digest('SHA-512', buffer.buffer).then(result => {
+            resolve(Array.from(new Uint8Array(result)).map(
+                c => c.toString(16).padStart(2, '0')
+            ).join(''));
+        }, reject);
+    });
+}
+
+async function process(data, difficulty = 4) {
+    let hash;
+    let nonce = 0;
+    const targetSubStr = Array(difficulty+1).join('0');
+
+    do {
+        nonce += 1;
+        hash = await sha512(data + nonce);
+    } while(hash.substr(0, difficulty) !== targetSubStr);
+    return nonce;
+}
+
+async function run(e) {
+    e.preventDefault();
+    const sub = document.querySelector("#sub");
+    sub.disabled = true;
+    const tok = document.querySelector("#tok").value;
+    const cha = document.querySelector("#cha").value;
+    let f = document.querySelector("#sol");
+    let tt = 3;
+    const loading = setInterval(() => {
+      sub.innerHTML = "正在处理,请稍候 " + Array(tt).join('.');
+      tt += 1;
+      if (tt == 6) { tt = 3};
+    }, 500);
+    let s = await process(cha);
+    f.value = s;
+    clearInterval(loading);
+    sub.innerHTML = "即将加载...";
+    e.target.submit();
+}
+
+document.querySelector("#sec").addEventListener("submit", run);
+</script>
+</html>
+

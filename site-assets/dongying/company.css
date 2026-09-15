@@ -1,0 +1,28 @@
+/* Let translated culture-card text determine row heights instead of fixed coordinates. */
+html body #module456,
+html body #module456 .fullmeasureOuterContentPage,
+html body #module456 .fullmeasureOuterContent,
+html body #fullmeasureContent456_1{height:auto!important;min-height:0!important}
+html body #fk-inFullmeasureListZone456-1{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px 27px;padding:70px 18px 60px;box-sizing:border-box;height:auto!important;min-height:0!important;isolation:isolate}
+html body #fk-inFullmeasureListZone456-1>.form{position:relative!important;top:auto!important;left:auto!important;width:auto!important;height:auto!important;min-height:0!important;margin:0 24px!important;align-self:start;z-index:1;box-sizing:border-box}
+html body #fk-inFullmeasureListZone456-1>.fk-elemZoneBg{position:absolute;inset:0;z-index:-1}
+html body #module456 :is(#module480,#module486,#module485,#module484,#module483,#module481){grid-column:1}
+html body #module456 :is(#module459,#module460,#module461,#module462,#module463,#module464,#module465){grid-column:2}
+html body #module456 :is(#module466,#module468,#module469,#module470,#module467,#module471,#module472){grid-column:3}
+html body #module456 :is(#module473,#module474,#module476,#module477,#module475,#module478,#module479){grid-column:4}
+html body #module456 #module458{grid-column:1/-1;grid-row:1;margin:0 0 44px!important}
+html body #module456 :is(#module480,#module459,#module466,#module473){grid-row:2/8;align-self:stretch;margin:0!important;background:#fff;z-index:0}
+html body #module456 :is(#module480,#module459,#module466,#module473)>*{display:none!important}
+html body #module456 :is(#module486,#module460,#module468,#module474){grid-row:2;margin:0!important;height:204px!important;overflow:hidden}
+html body #module456 :is(#module486,#module460,#module468,#module474) :is(.floatImg,.floatImgWrap,.forMargin){width:100%!important;height:204px!important}
+html body #module456 :is(#float_img_486,#float_img_460,#float_img_468,#float_img_474){width:100%!important;height:204px!important;object-fit:cover}
+html body #module456 :is(#module485,#module461,#module469,#module476){grid-row:3;margin-top:4px!important}
+html body #module456 :is(#module484,#module462,#module470,#module477){grid-row:4}
+html body #module456 :is(#module483,#module463,#module467,#module475){grid-row:5}
+html body #module456 :is(#module464,#module471,#module478){grid-row:6}
+html body #module456 :is(#module465,#module472,#module479){grid-row:7;margin-bottom:24px!important}
+html body #module456 #module481{grid-row:6/8;margin-bottom:24px!important}
+html body #module456 .siteEditor :is(.lightModuleOuterContent,.fk-editor){height:auto!important;min-height:0!important;overflow:visible!important}
+html body #module456 .siteEditor .fk-editor{overflow-wrap:anywhere;word-break:normal;line-height:26px}
+html body #module456 :is(#module485,#module461,#module469,#module476) .fk-editor{line-height:30px;text-wrap:balance}
+html body #module456 #module458 .fk-editor{line-height:54px}

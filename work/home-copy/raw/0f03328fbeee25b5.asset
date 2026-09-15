@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>豆瓣</title>
+    <style type="text/css">
+        body{font-family:Arial,Helvetica,sans-serif;font-size:14px;}
+    </style>
+</head>
+<body>
+    <div>
+        <div style="margin:20px auto;">
+            <div style="font-size:25px;color:#1b9336;border-bottom:5px solid #eef9eb">
+                <span style="font-size:20px;font-weight:bold">豆瓣</span> d<span style="color:#0092c8">o</span><span style="color:#ffad68">u</span><span>b</span><span style="color:#0092c8">a</span><span style="color:#ffad68">n</span>
+            </div>
+            <p>请点击下方按钮继续浏览或<a href="https://accounts.douban.com/passport/login?redir=https://www.douban.com/">登录</a>使用豆瓣</p>
+            <form name="sec" id="sec" method="POST" action="/c">
+              <input type="hidden" id="tok" name="tok" value="1789263597@14f950398f78d3344a36047531531bea52ae8a2a54a57249da73a5c39ce0646f96c59e6e4f2740f627d88d3954b4de17c176f5d965012bfe60f92a30a8b1112e@aHR0cHM6Ly93d3cuZG91YmFuLmNvbS9hY2NvdW50cy9jb25uZWN0L3FxLz9mcm9tPU5vbmUmcmVkaXI9aHR0cHMlM0EvL3d3dy5kb3ViYW4uY29tL3NoYXJlL3NlcnZpY2UlM0ZuYW1lJTNEJTI1RTMlMjU4MCUyNTkwJTI1RTQlMjVCOCUyNTg5JTI1RTUlMjVCOSUyNUI0JTI1RTclMjVBMyUyNUE4JTI1RTQlMjVCOCUyNTgwJTI1RTUlMjU4OSUyNTkxJTI1RUYlMjVCQyUyNThDJTI1RTclMjVCQiUyNTg4JTI1RTYlMjU4OCUyNTkwJTI1RTUlMjU4OCUyNUE5JTI1RTUlMjU5OSUyNUE4JTI1RUYlMjVCQyUyNTgxJTI1RTUlMjU4NSUyNUIwJTI1RTUlMjVCNyUyNTlFJTI1RTclMjU5RiUyNUIzJTI1RTUlMjU4QyUyNTk2JTI1RTclMjU4OSUyNUI5JTI1RTYlMjVBRSUyNThBJTI1RTQlMjVCRCUyNTlDJTI1RTQlMjVCOCUyNTlBJTI1RTYlMjU5OSUyNUJBJTI1RTglMjU4MyUyNUJEJTI1RTclMjU5QiUyNTkxJTI1RTclMjVBRSUyNUExJTI1RTclMjVCMyUyNUJCJTI1RTclMjVCQiUyNTlGJTI1RTclMjU5QSUyNTg0JTI1RTYlMjU4QyUyNTgxJTI1RTclMjVCQiUyNUFEJTI1RTUlMjU4OCUyNTlCJTI1RTYlMjU5NiUyNUIwJTI1RTUlMjVBRSUyNTlFJTI1RTglMjVCNyUyNUI1JTJCLSUyQiUyNUU1JTI1OEMlMjU5NyUyNUU0JTI1QkElMjVBQyUyNUU3JTI1OUIlMjU4OCUyNUU1JTI1ODglMjU5QiUyNUU1JTI1QTQlMjVBOSUyNUU1JTI1OUMlMjVCMCUyNUU3JTI1QTclMjU5MSUyNUU2JTI1OEElMjU4MCUyNUU2JTI1OUMlMjU4OSUyNUU5JTI1OTklMjU5MCUyNUU1JTI1ODUlMjVBQyUyNUU1JTI1OEYlMjVCOCUyNUUzJTI1ODAlMjU5MWh0dHBzJTI1M0ElMjUyRiUyNTJGeWluY2h1bmcuY29tJTI1MkZzeXMtbmQlMjUyRjU1Lmh0bWwlMjZ0ZXh0JTNEaHR0cHMlMjUzQSUyNTJGJTI1MkZ5aW5jaHVuZy5jb20lMjUyRnN5cy1uZCUyNTJGNTUuaHRtbCUyNmltYWdlJTNEaHR0cCUyNTNBLy8zMzc5MjAwMy5zMjFpLmZhaXVzci5jb20vNC9BQlVJQUJBRUdBQWd2dS1HMHdZb3dLdW9wUWN3Z3c4NHNRWS5wbmc=@6213743d4ab5f03a93bd37a52affe10844b2a8477ba10a173aa4ac9bbb032c1e" />
+              <input type="hidden" id="cha" name="cha" value="7b15bac7be78276d0b5e563cfc57adac2052b10dbac7c1a3fa783c11459e3edae268c90f40681ae24cc369a2fa597efc2eccda53fd7dedc2ee35fba56dc020e3" />
+              <input type="hidden" id="sol" name="sol" value="" />
+              <input type="hidden" id="red" name="red" value="https://www.douban.com/accounts/connect/qq/?from=None&redir=https%3A//www.douban.com/share/service%3Fname%3D%25E3%2580%2590%25E4%25B8%2589%25E5%25B9%25B4%25E7%25A3%25A8%25E4%25B8%2580%25E5%2589%2591%25EF%25BC%258C%25E7%25BB%2588%25E6%2588%2590%25E5%2588%25A9%25E5%2599%25A8%25EF%25BC%2581%25E5%2585%25B0%25E5%25B7%259E%25E7%259F%25B3%25E5%258C%2596%25E7%2589%25B9%25E6%25AE%258A%25E4%25BD%259C%25E4%25B8%259A%25E6%2599%25BA%25E8%2583%25BD%25E7%259B%2591%25E7%25AE%25A1%25E7%25B3%25BB%25E7%25BB%259F%25E7%259A%2584%25E6%258C%2581%25E7%25BB%25AD%25E5%2588%259B%25E6%2596%25B0%25E5%25AE%259E%25E8%25B7%25B5%2B-%2B%25E5%258C%2597%25E4%25BA%25AC%25E7%259B%2588%25E5%2588%259B%25E5%25A4%25A9%25E5%259C%25B0%25E7%25A7%2591%25E6%258A%2580%25E6%259C%2589%25E9%2599%2590%25E5%2585%25AC%25E5%258F%25B8%25E3%2580%2591https%253A%252F%252Fyinchung.com%252Fsys-nd%252F55.html%26text%3Dhttps%253A%252F%252Fyinchung.com%252Fsys-nd%252F55.html%26image%3Dhttp%253A//33792003.s21i.faiusr.com/4/ABUIABAEGAAgvu-G0wYowKuopQcwgw84sQY.png">
+              <button type="submit" id="sub" name="btnsubmit">点我继续浏览</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+
+function sha512(string) {
+    return new Promise((resolve, reject) => {
+        let buffer = (new TextEncoder).encode(string);
+
+        crypto.subtle.digest('SHA-512', buffer.buffer).then(result => {
+            resolve(Array.from(new Uint8Array(result)).map(
+                c => c.toString(16).padStart(2, '0')
+            ).join(''));
+        }, reject);
+    });
+}
+
+async function process(data, difficulty = 4) {
+    let hash;
+    let nonce = 0;
+    const targetSubStr = Array(difficulty+1).join('0');
+
+    do {
+        nonce += 1;
+        hash = await sha512(data + nonce);
+    } while(hash.substr(0, difficulty) !== targetSubStr);
+    return nonce;
+}
+
+async function run(e) {
+    e.preventDefault();
+    const sub = document.querySelector("#sub");
+    sub.disabled = true;
+    const tok = document.querySelector("#tok").value;
+    const cha = document.querySelector("#cha").value;
+    let f = document.querySelector("#sol");
+    let tt = 3;
+    const loading = setInterval(() => {
+      sub.innerHTML = "正在处理,请稍候 " + Array(tt).join('.');
+      tt += 1;
+      if (tt == 6) { tt = 3};
+    }, 500);
+    let s = await process(cha);
+    f.value = s;
+    clearInterval(loading);
+    sub.innerHTML = "即将加载...";
+    e.target.submit();
+}
+
+document.querySelector("#sec").addEventListener("submit", run);
+</script>
+</html>
+

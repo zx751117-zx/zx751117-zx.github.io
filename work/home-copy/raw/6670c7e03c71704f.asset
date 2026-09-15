@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>登录豆瓣</title>
+  <style type="text/css">
+    #db-nav-sns{position:relative;zoom:1;background:#edf4ed}
+    #db-nav-sns .nav-primary{width:1040px;margin:0 auto;overflow:hidden;padding:22px 0 20px;zoom:1}
+    .account-wrap{width:1040px;margin:20px auto 0;overflow:hidden}
+    .account-main{float:left;width:590px}
+    .account-side{float:right;width:310px;color:#666}
+    
+  </style>
+  
+
+</head>
+<body>
+  
+  <div id="account">
+    
+    
+<div id="db-nav-sns" class="nav">
+  <div class="nav-wrap">
+    <div class="nav-primary">
+      <a href="/">
+        <img src="https://img1.doubanio.com/f/accounts/4fd84763a74089b20eb02ba0225d6e7739d2c432/pics/passport/douban_logo@2x.png" width="142" alt="豆瓣">
+      </a>
+    </div>
+  </div>
+</div>
+
+
+    
+  <div id="app"></div>
+
+  </div>
+
+  
+  
+
+  
+  <script type="text/javascript">
+    window._CONFIG = {"redirect_in_iframe": false, "default_redir": "https://www.douban.com", "douban_group": "https://www.douban.com/group/", "is_ark": false, "weibo_url": "https://www.douban.com/accounts/connect/sina_weibo/?from=None&redir=https%3A//www.douban.com/share/service%3Fname%3D%25E3%2580%2590%25E4%25B8%2589%25E5%25B9%25B4%25E7%25A3%25A8%25E4%25B8%2580%25E5%2589%2591%25EF%25BC%258C%25E7%25BB%2588%25E6%2588%2590%25E5%2588%25A9%25E5%2599%25A8%25EF%25BC%2581%25E5%2585%25B0%25E5%25B7%259E%25E7%259F%25B3%25E5%258C%2596%25E7%2589%25B9%25E6%25AE%258A%25E4%25BD%259C%25E4%25B8%259A%25E6%2599%25BA%25E8%2583%25BD%25E7%259B%2591%25E7%25AE%25A1%25E7%25B3%25BB%25E7%25BB%259F%25E7%259A%2584%25E6%258C%2581%25E7%25BB%25AD%25E5%2588%259B%25E6%2596%25B0%25E5%25AE%259E%25E8%25B7%25B5%2B-%2B%25E5%258C%2597%25E4%25BA%25AC%25E7%259B%2588%25E5%2588%259B%25E5%25A4%25A9%25E5%259C%25B0%25E7%25A7%2591%25E6%258A%2580%25E6%259C%2589%25E9%2599%2590%25E5%2585%25AC%25E5%258F%25B8%25E3%2580%2591https%253A%252F%252Fyinchung.com%252Fsys-nd%252F55.html%26text%3Dhttps%253A%252F%252Fyinchung.com%252Fsys-nd%252F55.html%26image%3Dhttp%253A//33792003.s21i.faiusr.com/4/ABUIABAEGAAgvu-G0wYowKuopQcwgw84sQY.png&fallback=", "redir": "https://www.douban.com/share/service?name=%E3%80%90%E4%B8%89%E5%B9%B4%E7%A3%A8%E4%B8%80%E5%89%91%EF%BC%8C%E7%BB%88%E6%88%90%E5%88%A9%E5%99%A8%EF%BC%81%E5%85%B0%E5%B7%9E%E7%9F%B3%E5%8C%96%E7%89%B9%E6%AE%8A%E4%BD%9C%E4%B8%9A%E6%99%BA%E8%83%BD%E7%9B%91%E7%AE%A1%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%8C%81%E7%BB%AD%E5%88%9B%E6%96%B0%E5%AE%9E%E8%B7%B5+-+%E5%8C%97%E4%BA%AC%E7%9B%88%E5%88%9B%E5%A4%A9%E5%9C%B0%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E3%80%91https%3A%2F%2Fyinchung.com%2Fsys-nd%2F55.html&text=https%3A%2F%2Fyinchung.com%2Fsys-nd%2F55.html&image=http%3A//33792003.s21i.faiusr.com/4/ABUIABAEGAAgvu-G0wYowKuopQcwgw84sQY.png", "wechat_url": "https://www.douban.com/accounts/connect/wechat/?from=None&redir=https%3A//www.douban.com/share/service%3Fname%3D%25E3%2580%2590%25E4%25B8%2589%25E5%25B9%25B4%25E7%25A3%25A8%25E4%25B8%2580%25E5%2589%2591%25EF%25BC%258C%25E7%25BB%2588%25E6%2588%2590%25E5%2588%25A9%25E5%2599%25A8%25EF%25BC%2581%25E5%2585%25B0%25E5%25B7%259E%25E7%259F%25B3%25E5%258C%2596%25E7%2589%25B9%25E6%25AE%258A%25E4%25BD%259C%25E4%25B8%259A%25E6%2599%25BA%25E8%2583%25BD%25E7%259B%2591%25E7%25AE%25A1%25E7%25B3%25BB%25E7%25BB%259F%25E7%259A%2584%25E6%258C%2581%25E7%25BB%25AD%25E5%2588%259B%25E6%2596%25B0%25E5%25AE%259E%25E8%25B7%25B5%2B-%2B%25E5%258C%2597%25E4%25BA%25AC%25E7%259B%2588%25E5%2588%259B%25E5%25A4%25A9%25E5%259C%25B0%25E7%25A7%2591%25E6%258A%2580%25E6%259C%2589%25E9%2599%2590%25E5%2585%25AC%25E5%258F%25B8%25E3%2580%2591https%253A%252F%252Fyinchung.com%252Fsys-nd%252F55.html%26text%3Dhttps%253A%252F%252Fyinchung.com%252Fsys-nd%252F55.html%26image%3Dhttp%253A//33792003.s21i.faiusr.com/4/ABUIABAEGAAgvu-G0wYowKuopQcwgw84sQY.png", "pics": [], "source": null, "qq_url": "https://www.douban.com/accounts/connect/qq/?from=None&redir=https%3A//www.douban.com/share/service%3Fname%3D%25E3%2580%2590%25E4%25B8%2589%25E5%25B9%25B4%25E7%25A3%25A8%25E4%25B8%2580%25E5%2589%2591%25EF%25BC%258C%25E7%25BB%2588%25E6%2588%2590%25E5%2588%25A9%25E5%2599%25A8%25EF%25BC%2581%25E5%2585%25B0%25E5%25B7%259E%25E7%259F%25B3%25E5%258C%2596%25E7%2589%25B9%25E6%25AE%258A%25E4%25BD%259C%25E4%25B8%259A%25E6%2599%25BA%25E8%2583%25BD%25E7%259B%2591%25E7%25AE%25A1%25E7%25B3%25BB%25E7%25BB%259F%25E7%259A%2584%25E6%258C%2581%25E7%25BB%25AD%25E5%2588%259B%25E6%2596%25B0%25E5%25AE%259E%25E8%25B7%25B5%2B-%2B%25E5%258C%2597%25E4%25BA%25AC%25E7%259B%2588%25E5%2588%259B%25E5%25A4%25A9%25E5%259C%25B0%25E7%25A7%2591%25E6%258A%2580%25E6%259C%2589%25E9%2599%2590%25E5%2585%25AC%25E5%258F%25B8%25E3%2580%2591https%253A%252F%252Fyinchung.com%252Fsys-nd%252F55.html%26text%3Dhttps%253A%252F%252Fyinchung.com%252Fsys-nd%252F55.html%26image%3Dhttp%253A//33792003.s21i.faiusr.com/4/ABUIABAEGAAgvu-G0wYowKuopQcwgw84sQY.png", "login_source": null, "is_ark_app": false, "ark_cls": "", "supported_countries": "[[\"CN\",\"China\",\"+86\",\"\u4e2d\u56fd\u5927\u9646\"],[\"HK\",\"Hong Kong\",\"+852\",\"\u4e2d\u56fd\u9999\u6e2f\"],[\"MO\",\"Macao\",\"+853\",\"\u4e2d\u56fd\u6fb3\u95e8\"],[\"TW\",\"Taiwan\",\"+886\",\"\u4e2d\u56fd\u53f0\u6e7e\"],[\"JP\",\"Japan\",\"+81\",\"\u65e5\u672c\"],[\"KR\",\"South Korea\",\"+82\",\"\u97e9\u56fd\"],[\"SG\",\"Singapore\",\"+65\",\"\u65b0\u52a0\u5761\"],[\"TH\",\"Thailand\",\"+66\",\"\u6cf0\u56fd\"],[\"MY\",\"Malaysia\",\"+60\",\"\u9a6c\u6765\u897f\u4e9a\"],[\"US\",\"United States\",\"+1\",\"\u7f8e\u56fd\"],[\"CA\",\"Canada\",\"+1\",\"\u52a0\u62ff\u5927\"],[\"AU\",\"Australia\",\"+61\",\"\u6fb3\u5927\u5229\u4e9a\"],[\"GB\",\"United Kingdom\",\"+44\",\"\u82f1\u56fd\"],[\"DE\",\"Germany\",\"+49\",\"\u5fb7\u56fd\"],[\"FR\",\"France\",\"+33\",\"\u6cd5\u56fd\"],[\"RU\",\"Russia\",\"+7\",\"\u4fc4\u7f57\u65af\"],[\"IN\",\"India\",\"+91\",\"\u5370\u5ea6\"],[\"NZ\",\"New Zealand\",\"+64\",\"\u65b0\u897f\u5170\"],[\"IT\",\"Italy\",\"+39\",\"\u610f\u5927\u5229\"],[\"NL\",\"Netherlands\",\"+31\",\"\u8377\u5170\"],[\"ES\",\"Spain\",\"+34\",\"\u897f\u73ed\u7259\"],[\"SE\",\"Sweden\",\"+46\",\"\u745e\u5178\"],[\"AT\",\"Austria\",\"+43\",\"\u5965\u5730\u5229\"],[\"CH\",\"Switzerland\",\"+41\",\"\u745e\u58eb\"],[\"LT\",\"Lithuania\",\"+370\",\"\u7acb\u9676\u5b9b\"],[\"PH\",\"Philippines\",\"+63\",\"\u83f2\u5f8b\u5bbe\"],[\"ID\",\"Indonesia\",\"+62\",\"\u5370\u5ea6\u5c3c\u897f\u4e9a\"],[\"VN\",\"Vietnam\",\"+84\",\"\u8d8a\u5357\"],[\"AE\",\"United Arab Emirates\",\"+971\",\"\u963f\u8054\u914b\"]]", "is_qq_login": false, "is_anony": false, "douban_account": "https://accounts.douban.com"};
+  </script>
+
+  <script type="text/javascript" src="https://img3.doubanio.com/cuphead/accounts-static/login/index.bb3b2.js"></script>
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+        _paq.push(['setTrackerUrl', u+'piwik']);
+        _paq.push(['setSiteId', '100001']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript';
+        g.defer=true;
+        g.async=true;
+        g.src=p+'://img3.doubanio.com/dae/fundin/piwik.js';
+        s.parentNode.insertBefore(g,s);
+    })();
+</script>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

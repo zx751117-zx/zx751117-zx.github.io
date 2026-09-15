@@ -1,0 +1,30 @@
+/* Dongying header and footer, scoped to avoid changing the product pages. */
+#dongying-header,#dongying-footer{font-family:"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;color:#222;font-size:16px;line-height:1.6;text-align:left;letter-spacing:normal}
+#dongying-header *,#dongying-footer *{box-sizing:border-box;margin:0;padding:0}
+#dongying-header a,#dongying-footer a{color:inherit;text-decoration:none}
+#dongying-header .container,#dongying-footer .container{width:1200px;max-width:calc(100% - 48px);margin:auto}
+#dongying-header{background:#fff;height:82px;position:fixed;top:0;left:0;width:100%;z-index:9999;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+#dongying-header .header-inner{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+#dongying-header .logo{position:static;float:none;display:block;flex-shrink:0;width:auto;height:auto;font-size:38px;font-weight:900;color:#0d63d9;line-height:1;white-space:nowrap}
+#dongying-header .logo span{display:block;font-size:12px;margin-top:5px;color:#0d63d9}
+#dongying-header nav ul{display:flex;align-items:center;gap:32px;list-style:none}
+#dongying-header nav a{display:block;font-size:15px;font-weight:500;white-space:nowrap;padding:10px 0}
+#dongying-header nav a:hover,#dongying-header nav a[aria-current="page"]{color:#0d63d9}
+#dongying-header .right-tools{display:flex;align-items:center;flex-shrink:0}
+#dongying-header .lang{display:flex;background:#f1f4fb;border-radius:30px;overflow:hidden}
+#dongying-header .language-label{padding:10px 20px;font-size:13px;font-weight:700;background:#0d63d9;color:white;white-space:nowrap}
+.dongying-header-space{height:82px}
+#dongying-footer{position:relative;background:#fff;color:#111827;padding:70px 0 40px;margin-top:80px;clear:both}
+#dongying-footer .footer-grid{display:grid;grid-template-columns:2fr 1fr 3fr;gap:40px}
+#dongying-footer .footer-title{font-size:34px;font-weight:900;margin-bottom:20px}
+#dongying-footer .footer-logo{width:180px;height:auto;display:block;margin-bottom:10px;filter:drop-shadow(0 6px 10px rgba(0,0,0,.25))}
+#dongying-footer .footer-links a{display:block;margin-bottom:12px;color:#374151}
+#dongying-footer p{font-size:16px;line-height:1.8}
+#dongying-footer .footer-contact p{margin-bottom:12px;color:#4b5563;overflow-wrap:anywhere}
+#dongying-footer .copy{border-top:1px solid rgba(17,24,39,.08);margin-top:40px;padding-top:25px;text-align:center;color:#6b7280;font-size:14px}
+#dongying-footer a:hover{color:#0d63d9}
+#dongying-contact{scroll-margin-top:110px;scroll-margin-left:32px}
+/* Keep the original layout hooks for its scripts, without the former chrome. */
+html body #web .webTopTable,html body #web .webNavTable,html body #web #webHeaderTable,html body #web #webFooterTable{display:none!important;height:0!important;min-height:0!important}
+@media(max-width:1100px){#dongying-header .header-inner{gap:16px}#dongying-header nav ul{gap:18px}#dongying-header .logo{font-size:30px}#dongying-header .language-label{padding:8px 12px}#dongying-footer .footer-grid{grid-template-columns:1fr 2fr}#dongying-footer .footer-links:empty{display:none}}
+@media(max-width:800px){#dongying-header{height:116px}#dongying-header .header-inner{height:116px;flex-wrap:wrap;align-content:center;gap:10px}#dongying-header .logo{font-size:26px}#dongying-header nav{order:3;width:100%;overflow-x:auto}#dongying-header nav ul{justify-content:space-between;gap:20px}#dongying-header nav a{font-size:13px;padding:3px 0}.dongying-header-space{height:116px}#dongying-footer .footer-grid{grid-template-columns:1fr;gap:28px}#dongying-footer .footer-logo{width:120px}#dongying-footer{padding:45px 0 28px}#dongying-header .container,#dongying-footer .container{max-width:calc(100% - 32px)}}

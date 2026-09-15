@@ -1,0 +1,40 @@
+const fs=require('fs'),path=require('path');
+if (fs.existsSync(path.join(__dirname, '../header.html'))) throw new Error('Shared layout is enabled. Edit contact.html directly; edit shared header.html/footer.html and run node scripts/build-layout.cjs for layout changes.');
+const c=require(require.resolve('cheerio',{paths:[__dirname,path.resolve('work/home-copy')]}));
+const {pages}=require('../site-copy-manifest.json');
+const backup=file=>{const target=path.join('work/contact-with-mother-header/before',file);if(!fs.existsSync(target)){fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(file,target)}};
+for(const file of ['contact.html','contact_cn.html','site-assets/local-navigation.js'])backup(file);
+const $=c.load(fs.readFileSync('h-col-101.html','utf8'));
+const source=c.load(fs.readFileSync('components/dongying/contact.html','utf8'));
+// Reuse the current header and footer; discard the company page's main content.
+$('.webBannerTable,.absMiddleTable,#fullmeasureTopForms,#webContainerTable,#fullmeasureBottomForms,.absBottomTable').remove();
+$('#navCenter .itemSelected').removeClass('itemSelected');
+$('title').text('東盈創世 | お問い合わせ');
+$('meta[name="description"],meta[name="keywords"]').attr('content','東盈創世へのご相談・資料請求・お見積もりはこちら。');
+const content=source('section.section');content.attr({id:'dongying-contact-page',role:'main','aria-labelledby':'contact-title'});
+content.find('h2').replaceWith('<h1 id="contact-title">お問い合わせ</h1>');
+content.find('#name').attr({required:'',autocomplete:'name'});
+content.find('#company').attr('autocomplete','organization');
+content.find('#email').attr({required:'',type:'email',autocomplete:'email'});
+content.find('#message').attr('required','');
+content.find('#contact-form').attr('novalidate','');
+content.find('button').attr('type','submit');
+content.find('#contact-form').append('<p class="mail-note">「送信する」を押すと、ご利用のメールアプリが開きます。内容をご確認のうえ、メールアプリから送信してください。</p>');
+content.find('.contact-details p').eq(2).html('<strong>電話</strong><br><a href="tel:0752030940">075-203-0940</a>');
+content.find('.contact-details p').eq(3).html('<strong>メール</strong><br><a href="mailto:info@yinchung.com">info@yinchung.com</a>');
+$('#web').after(source.html(content).trim());
+$('head').append('<link rel="stylesheet" href="site-assets/dongying/contact.css"><script defer src="site-assets/dongying/contact.js"></script>');
+fs.writeFileSync('contact.html',$.html());
+let links=0;
+for(const file of pages.map(p=>p.file).concat('contact.html')){
+ if(file!=='contact.html')backup(file);
+ const dom=c.load(fs.readFileSync(file,'utf8')),target=path.posix.relative(path.posix.dirname(file),'contact.html');
+ dom('a[href]').each((_,e)=>{const a=dom(e),href=a.attr('href');if(/jumpToModulePosition\(617\b/.test(href)||/h-col-101\.html#module617/.test(href)){a.attr('href',target).removeAttr('onclick').removeAttr('target');links++}});
+ fs.writeFileSync(file,dom.html());
+}
+fs.writeFileSync('contact_cn.html','<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=contact.html"><title>東盈創世 | お問い合わせ</title></head><body><a href="contact.html">お問い合わせページを開く</a></body></html>');
+let nav=fs.readFileSync('site-assets/local-navigation.js','utf8');
+if(!nav.includes("location.hash==='#module617'"))nav=nav.replace('function normalize(value)',"if(location.pathname.endsWith('/h-col-101.html')&&location.hash==='#module617')location.replace(new URL('contact.html',root));\nfunction normalize(value)");
+if(!nav.includes("location.href=new URL('contact.html',root).href"))nav=nav.replace("const href=a.getAttribute('href')||'';let value","const href=a.getAttribute('href')||'';if(/jumpToModulePosition\\(617\\b/.test(href)||/h-col-101\\.html#module617/.test(href)){event.preventDefault();event.stopImmediatePropagation();location.href=new URL('contact.html',root).href;return}let value");
+fs.writeFileSync('site-assets/local-navigation.js',nav);
+console.log(`Created contact page with mother-company header and Dongying footer; updated ${links} links.`);

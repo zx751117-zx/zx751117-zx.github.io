@@ -1,0 +1,26 @@
+/* Dongying contact page, with the existing mother-company header. */
+html body #web{min-height:0!important;height:auto!important}
+#dongying-contact-page{position:relative;display:block;background:#f5f8fd;color:#222;padding:90px 0;font:16px/1.8 "Noto Sans JP","Yu Gothic",Meiryo,sans-serif;text-align:left}
+#dongying-contact-page *{box-sizing:border-box;margin:0;padding:0}
+#dongying-contact-page .container{position:static;width:1200px;max-width:calc(100% - 48px);margin:auto}
+#dongying-contact-page .title{text-align:center;margin-bottom:55px}
+#dongying-contact-page h1{font-size:42px;font-weight:900;line-height:1.4;margin-bottom:12px}
+#dongying-contact-page p{font-size:16px;line-height:1.8}
+#dongying-contact-page .title p{font-size:17px;color:#777}
+#dongying-contact-page .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+#dongying-contact-page .contact-box,#dongying-contact-page .contact-form{background:#fff;border-radius:20px;padding:32px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+#dongying-contact-page h3{font-size:28px;font-weight:700;margin-bottom:18px}
+#dongying-contact-page .contact-box p{color:#555;line-height:1.9;margin-bottom:18px}
+#dongying-contact-page .contact-details p{color:#404040;line-height:1.8;margin-bottom:16px;overflow-wrap:anywhere}
+#dongying-contact-page a{color:inherit;text-decoration:none}
+#dongying-contact-page a:hover{color:#0d63d9}
+#dongying-contact-page .form-group{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+#dongying-contact-page label{font-size:16px;font-weight:700}
+#dongying-contact-page input,#dongying-contact-page textarea{display:block;width:100%;height:auto;border:1px solid #dde3ee;border-radius:12px;padding:16px 18px;font:15px/1.6 inherit;color:#333;background:#fafbff;scroll-margin-top:150px}
+#dongying-contact-page input,#dongying-contact-page textarea,#dongying-contact-page button{font-family:inherit;font-size:15px;line-height:1.6}
+#dongying-contact-page textarea{resize:vertical;min-height:210px}
+#dongying-contact-page input:focus-visible,#dongying-contact-page textarea:focus-visible{outline:2px solid #0d63d9;outline-offset:2px}
+#dongying-contact-page .button-primary{display:inline-block;background:#0d63d9;color:#fff;border:0;border-radius:999px;padding:16px 32px;font-size:16px;cursor:pointer}
+#dongying-contact-page .button-primary:hover{background:#094fa6}
+#dongying-contact-page .mail-note{font-size:13px;color:#666;line-height:1.7;margin-top:16px}
+@media(max-width:900px){#dongying-contact-page{padding:48px 0}#dongying-contact-page .contact-grid{grid-template-columns:1fr}#dongying-contact-page h1{font-size:32px}#dongying-contact-page .contact-box,#dongying-contact-page .contact-form{padding:24px}}

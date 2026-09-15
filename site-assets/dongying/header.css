@@ -1,0 +1,14 @@
+/* Keep the existing navigation design and replace only the requested branding. */
+html body #webHeaderTable,html body #webHeaderContent,html body #webHeaderContentBg{background:#fff!important}
+html body #logo{top:38px!important;left:30px!important;width:260px!important;height:55px!important}
+html body #logoLink{display:block;color:#0d63d9!important;font-family:"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;font-size:38px!important;font-weight:900!important;line-height:1!important;text-decoration:none;white-space:nowrap}
+html body #logoLink span{display:block;color:#0d63d9!important;font-size:12px!important;font-weight:900;line-height:1!important;margin-top:5px}
+html body #navV2{width:945px!important}
+html body #navV2 .navContent,html body #navV2 #navCenterContent{width:100%!important;margin-left:0!important;margin-right:0!important}
+html body #navCenter{width:100%!important}
+html body #navCenter .J_nav_item_name{font-size:20px!important}
+html body #navCenter .itemContainer{width:100%!important}
+html body #navCenter .itemPrev,html body #navCenter .itemNext{display:none!important}
+html body #navContact{width:130px!important}
+html body #navContact a{white-space:nowrap}
+html body #module314,html body #module315,html body #module316{display:none!important}

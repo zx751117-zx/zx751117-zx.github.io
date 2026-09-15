@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>豆瓣</title>
+    <style type="text/css">
+        body{font-family:Arial,Helvetica,sans-serif;font-size:14px;}
+    </style>
+</head>
+<body>
+    <div>
+        <div style="margin:20px auto;">
+            <div style="font-size:25px;color:#1b9336;border-bottom:5px solid #eef9eb">
+                <span style="font-size:20px;font-weight:bold">豆瓣</span> d<span style="color:#0092c8">o</span><span style="color:#ffad68">u</span><span>b</span><span style="color:#0092c8">a</span><span style="color:#ffad68">n</span>
+            </div>
+            <p>请点击下方按钮继续浏览或<a href="https://accounts.douban.com/passport/login?redir=https://www.douban.com/">登录</a>使用豆瓣</p>
+            <form name="sec" id="sec" method="POST" action="/c">
+              <input type="hidden" id="tok" name="tok" value="1789263598@23b99cdfe45d99d2f806408e09878bd85779970639c8d08241fe4837a47500af270173b2edf4abf4c59a68c49e5ff598f56c4425ae9a303658208865794ddf46@aHR0cHM6Ly93d3cuZG91YmFuLmNvbS9zaGFyZS9zZXJ2aWNlP25hbWU9JUUzJTgwJTkwJUU1JUI4JTgzJUU2JThFJUE3JUU3JTkwJTgzJUU3JTlBJTg0JUUyJTgwJTlDJUU3JTgxJUFCJUU3JTlDJUJDJUU5JTg3JTkxJUU3JTlEJTlCJUUyJTgwJTlEJUVGJUJDJTlBJUU4JUFFJUE5JUU0JUJEJTlDJUU0JUI4JTlBJUU3JThFJUIwJUU1JTlDJUJBJUU3JTlBJTg0JUU5JUEzJThFJUU5JTk5JUE5JUU2JTk3JUEwJUU1JUE0JTg0JUU5JTgxJTgxJUU1JUJEJUEyKy0rJUU1JThDJTk3JUU0JUJBJUFDJUU3JTlCJTg4JUU1JTg4JTlCJUU1JUE0JUE5JUU1JTlDJUIwJUU3JUE3JTkxJUU2JThBJTgwJUU2JTlDJTg5JUU5JTk5JTkwJUU1JTg1JUFDJUU1JThGJUI4JUUzJTgwJTkxaHR0cHMlM0ElMkYlMkZ5aW5jaHVuZy5jb20lMkZzeXMtbmQlMkY1NC5odG1sJnRleHQ9aHR0cHMlM0ElMkYlMkZ5aW5jaHVuZy5jb20lMkZzeXMtbmQlMkY1NC5odG1sJmltYWdlPWh0dHAlM0EvLzMzNzkyMDAzLnMyMWkuZmFpdXNyLmNvbS80L0FCVUlBQkFFR0FBZy1wV00wd1lvX3NuWTFRTXctd1E0NkFJLnBuZw==@6213743d4ab5f03a93bd37a52affe10844b2a8477ba10a173aa4ac9bbb032c1e" />
+              <input type="hidden" id="cha" name="cha" value="1223584d6b4d542fbdbfdd1233ddb28af5839d373be901b91b8f1edf7f89e65ebb0f861c442be6066457c65eef23ba71c897c46a851e5272bc80d04b6200f699" />
+              <input type="hidden" id="sol" name="sol" value="" />
+              <input type="hidden" id="red" name="red" value="https://www.douban.com/share/service?name=%E3%80%90%E5%B8%83%E6%8E%A7%E7%90%83%E7%9A%84%E2%80%9C%E7%81%AB%E7%9C%BC%E9%87%91%E7%9D%9B%E2%80%9D%EF%BC%9A%E8%AE%A9%E4%BD%9C%E4%B8%9A%E7%8E%B0%E5%9C%BA%E7%9A%84%E9%A3%8E%E9%99%A9%E6%97%A0%E5%A4%84%E9%81%81%E5%BD%A2+-+%E5%8C%97%E4%BA%AC%E7%9B%88%E5%88%9B%E5%A4%A9%E5%9C%B0%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E3%80%91https%3A%2F%2Fyinchung.com%2Fsys-nd%2F54.html&text=https%3A%2F%2Fyinchung.com%2Fsys-nd%2F54.html&image=http%3A//33792003.s21i.faiusr.com/4/ABUIABAEGAAg-pWM0wYo_snY1QMw-wQ46AI.png">
+              <button type="submit" id="sub" name="btnsubmit">点我继续浏览</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+
+function sha512(string) {
+    return new Promise((resolve, reject) => {
+        let buffer = (new TextEncoder).encode(string);
+
+        crypto.subtle.digest('SHA-512', buffer.buffer).then(result => {
+            resolve(Array.from(new Uint8Array(result)).map(
+                c => c.toString(16).padStart(2, '0')
+            ).join(''));
+        }, reject);
+    });
+}
+
+async function process(data, difficulty = 4) {
+    let hash;
+    let nonce = 0;
+    const targetSubStr = Array(difficulty+1).join('0');
+
+    do {
+        nonce += 1;
+        hash = await sha512(data + nonce);
+    } while(hash.substr(0, difficulty) !== targetSubStr);
+    return nonce;
+}
+
+async function run(e) {
+    e.preventDefault();
+    const sub = document.querySelector("#sub");
+    sub.disabled = true;
+    const tok = document.querySelector("#tok").value;
+    const cha = document.querySelector("#cha").value;
+    let f = document.querySelector("#sol");
+    let tt = 3;
+    const loading = setInterval(() => {
+      sub.innerHTML = "正在处理,请稍候 " + Array(tt).join('.');
+      tt += 1;
+      if (tt == 6) { tt = 3};
+    }, 500);
+    let s = await process(cha);
+    f.value = s;
+    clearInterval(loading);
+    sub.innerHTML = "即将加载...";
+    e.target.submit();
+}
+
+document.querySelector("#sec").addEventListener("submit", run);
+</script>
+</html>
+

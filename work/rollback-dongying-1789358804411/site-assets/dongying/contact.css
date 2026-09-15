@@ -1,0 +1,12 @@
+/* Adapt the original Dongying contact layout to the shared header. */
+body{font-family:"Noto Sans JP","Yu Gothic",Meiryo,sans-serif}
+#dongying-header nav{display:block}
+.contact-page{padding-top:70px}
+.contact-page .title h1{font-size:42px;font-weight:900;margin-bottom:12px}
+.contact-page .contact-details a{color:inherit}
+.contact-page .contact-details a:hover{color:#0d63d9}
+.contact-page input,.contact-page textarea,.contact-page button{font-family:inherit}
+.contact-page input,.contact-page textarea{scroll-margin-top:150px}
+.contact-page input:focus-visible,.contact-page textarea:focus-visible{outline:2px solid #0d63d9;outline-offset:2px}
+.contact-page .mail-note{font-size:13px;color:#666;line-height:1.7;margin-top:16px}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr}.contact-page{padding:48px 0}.contact-page .title h1{font-size:32px}.contact-page .contact-box,.contact-page .contact-form{padding:24px}}
